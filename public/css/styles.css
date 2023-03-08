@@ -1,0 +1,772 @@
+#logo-text {
+	position:relative;
+	font-size:22px;
+	color:#355367;
+	font-family:FjallaOne;
+	text-shadow: 1px 1px #00b0bf;
+}
+#login-section-wrapper {
+	position:relative;
+}
+#logo {
+	position:relative;
+	float:left;
+	margin-right:10px;
+	padding:0px 40px;
+}
+.title-link {
+	color:#355367;
+	text-decoration: none;
+}
+#login-search-section {
+	position:relative;
+	float:right;
+	width:20%;
+}
+#search-wrapper {
+	float:right;
+}
+#login {
+	position:relative;
+	float:left;
+	margin-right:10px;
+}
+#navigation {
+	position:relative;
+	margin-top:30px;
+	text-align:center;
+}
+#main {
+	padding:15px;
+	background-color: #ffffff;
+	/*color: #f1f1f1;*/
+	
+}
+.main-nav-item {
+	margin-right:20px;
+	font-family:ButesansUnicase;
+}
+#artist-collection {
+	margin:auto;
+	text-align: center;
+}
+.category-title {
+	width:max-content;
+	background-color:#ffffff;
+	border-radius:10px;
+}
+.category-section-title {
+	width:max-content;
+	background-color: #ffffff;
+	border-radius:20px;
+	text-shadow:1px 1px #ff3179;
+	font-size: 1.5rem;
+	justify-content: space-between;
+	
+}
+.library-title {
+	width:80%;
+	margin:auto;
+    color: #ff3179;
+    text-shadow: 1px 1px #355367;
+    font-size: 1.15rem;
+}
+.album-row-wrapper {
+	margin:40px 0px;
+}
+.artist-row {
+	position:relative;
+	width:100%;
+	margin:auto;
+	display:flex;
+	justify-content:space-between;
+}
+.artist-row-wrapper {
+	position:relative;
+	text-align:center;
+	width:80%;
+	margin:auto;
+}
+.artist-card {
+	position:relative;
+	padding:25px;
+	width:13%;
+	text-align:center;
+}
+.artist-name-wrapper {
+	margin:auto;
+	max-width:max-content;
+}
+.artist-card-name {
+	background-color: #ffffff;
+	border-radius:10px;
+	padding: 0px 10px 0px 10px;
+	font-family:FjallaOne;
+}
+a {
+	text-decoration: none;
+}
+.page-title-wrapper {
+	text-align:center;
+	margin:auto;
+	max-width: max-content;
+}
+.artist-card img {
+	position:relative;
+	max-width:100%;
+}
+footer {
+text-align:center;
+padding:20px;
+margin-top:20px;
+color:#355367;
+}
+nav a {
+	text-decoration:none;
+	color:#ff3179;
+	font-size: 1.5rem;
+	padding:0px 50px 0px 50px;
+	text-shadow: 1px 1px #00b0bf;
+}
+
+.album-detail-wrapper {
+	position:relative;
+	text-align:center;
+	width:80%;
+	margin:auto;
+}
+.album-wrapper {
+	position:relative;
+	text-align:center;
+	width:80%;
+	margin:auto;
+}
+.album-cover {
+	position:relative;
+	margin:auto;
+	max-width:100%;
+	padding: 10px 0px;
+	/*margin-bottom:100px;*/
+}
+.event-detail-wrapper {
+	position:relative;
+	text-align:center;
+	width:80%;
+	margin:auto;
+}
+.event-title {
+	padding:10px 20px;
+}
+.event-date {
+	padding:10px 20px;
+}
+.button-wrapper {
+	max-width:100%;
+	position:relative;
+	margin:auto;
+	margin-top:30px;
+}
+.title {
+	float:left;
+	width:200px;
+}
+.play-controls {
+	position:relative;
+	/*padding:10px;*/
+	margin:auto;
+	/*display:flex;*/
+	max-width:100%;
+	text-align:right;
+}
+.button-container {
+	margin: 10px 0px;
+	position:relative;
+}
+.button-container-events {
+	max-width: 50%;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+}
+/*Start buttons*/
+.dropdown-btn {
+	color:#00b0bf;
+	background-color: #355367;
+	float:left;
+	text-decoration: none;
+	font-family:ButesansUnicase;
+	border-radius: 10px;
+	border:none;
+	font-size:1rem;
+	display:flex;
+	justify-content:space-between;
+	max-width:100%;
+	margin:0px 0px 1rem 2rem;
+	padding:5px;
+}
+.dropdown {
+	position:relative;
+	display:inline-block;
+}
+.dropdown-content {
+	display:none;
+	position:absolute;
+	background-color:#ffffff;
+	min-width:160px;
+	box-shadow:0px 5px 5px 0px #ff3179;
+	z-index:1;
+	border-radius: 10px;
+	font-size:1rem;
+
+}
+.dropdown-content a {
+	color:#ff3179;
+	padding: 12px 16px;
+	text-decoration: none;
+	display:block;
+	border-radius: 10px;
+}
+.dropdown-content a:hover {background-color:#00b0bf;}
+.dropdown:hover .dropdown-content {display:block;}
+.dropdown:hover dropdown-btn {background-color: #00b0bf;}
+.primary-btn {
+	display: inline-block;
+	padding: 8px 15px;
+	font-size: 1.5rem;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #00b0bf;
+	background-color: #355367;
+	border: none;
+	border-radius: 5px;
+	/*box-shadow: 0 9px #999;*/
+	width: 100%;
+	font-family:FjallaOne;
+	/*margin: 0px 0px 30px 0px;*/
+	margin: 5px 0px;
+  }
+  
+  .primary-btn:hover {
+	  background-color: #00b0bf;
+	  color:#355367;
+	}
+  
+  .primary-btn:active {
+	background-color: #00b0bf;
+	/*box-shadow: 0 5px #666;*/
+	transform: translateY(4px);
+	color:#355367;
+  }
+  /*End primary-btn*/
+
+  /*Begin form-btn*/
+	.form-btn {
+		/*float: left;*/
+		width: 100%;
+		display: inline-block;
+		margin: 8px 0px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		color: #00b0bf;
+		background-color: #355367;
+		font-family:FjallaOne;
+		font-size: 1.2rem;
+		padding: 8px 0px;
+	}
+  
+  .form-btn:hover {
+	  background-color: #00b0bf;
+	  color:#355367;
+	}
+  
+  .form-btn:active {
+	background-color: #00b0bf;
+	/*box-shadow: 0 5px #666;*/
+	transform: translateY(4px);
+	color:#355367;
+  }
+/*End form-btn*/
+
+/*.form-btn-wrapper {
+	margin:5px 10px;
+}.form-btn-container {
+	margin:5px 10px;
+}
+*/
+
+/*----------BEGIN NAV DROPDOWN MENU----------*/
+
+.menu-btn {
+	background-color: #ffffff;
+	color: #ff3179;
+	padding: 16px;
+	font-size: 1.5em;
+	font-weight: bolder;
+	margin:0px 10px;
+	font-family:ButesansUnicase;
+	border: none;
+	text-shadow: 1px 1px #00b0bf;
+	border-radius:20px;
+ }
+ .dropdown-menu {
+	position: relative;
+	display: inline-block;
+ }
+ .menu-content {
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	min-width: 160px;
+	border-radius:25px;
+	z-index: 1;
+ }
+ nav{
+	background-color: #ffffff;
+ }
+ .main-nav-item,.main-nav-item-hidden{
+	display: inline-block;
+	color: #ff3179;
+	padding: 12px 16px;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin:0px 10px;
+	font-family:ButesansUnicase;
+ }
+ .main-nav-item-hidden{
+	display: block;
+	text-shadow: none;
+    font-size: 1.2em;
+	background-color:#ffffff;
+	color:#00b0bf;
+	border-radius:20px;
+ }
+ .main-nav-item{
+	display: inline-block;
+ }
+ .main-nav-item-hidden:hover,.links:hover {
+	background-color: #355367;
+	color:#ffffff
+ }
+ .dropdown-menu:hover .menu-content {
+	display: block;
+ }
+ .dropdown-menu:hover .menu-btn {
+	background-color: #355367;
+	color:#ffffff;
+ }
+
+/*----------END NAV DROPDOWN MENU----------*/
+.play {
+	float:left;
+}
+.download {
+	float:right;
+}
+.linked-img:hover {
+	transform: translateY(4px);
+	box-shadow:none;
+}
+.song-detail-wrapper {
+	border-bottom:1px solid #ff3179;
+	background-color:white;
+	width:30%;
+	margin:auto;
+}
+
+.song-detail {
+	border-top:1px solid #ff3179;
+}
+#songs-on-album {
+	float:right;
+}
+.event-description-wrapper {
+	position:relative;
+	max-width:50%;
+	text-align:left;
+	margin:auto;
+	background-color: #ffffff;
+	border-radius:20px;
+	padding: 20px 40px;
+	box-shadow:7px 7px 7px #9999994f;
+	border: 2px solid #e5e5e5;
+	border-radius: 20px;
+	margin-bottom:40px;
+}
+.album-description-wrapper {
+	position:relative;
+	max-width:50%;
+	text-align:left;
+	margin:auto;
+	background-color: #ffffff;
+	border-radius:20px;
+	padding: 20px 40px;
+	box-shadow:7px 7px 7px #9999994f;
+	border: 2px solid #e5e5e5;
+	border-radius: 20px;
+	margin:15px;
+}
+.artist-card img {
+	position:relative;
+	max-width:100%;
+	box-shadow: 7px 7px 7px #00b0bf;
+	border:2px solid #ff3179;
+	border-radius:20px;
+
+}
+.album-card img {
+	position:relative;
+	max-width:100%;
+	box-shadow: 7px 7px 7px #00b0bf;
+	border:2px solid #ff3179;
+	border-radius:20px;
+
+}
+.album-cover img {
+	position:relative;
+	max-width:100%;
+	box-shadow: 7px 7px 7px #00b0bf;
+	border:2px solid #ff3179;
+	border-radius:20px;
+
+}
+.underground-card img {
+	position:relative;
+	max-width:100%;
+	box-shadow: 7px 7px 7px #00b0bf;
+	border:2px solid #ff3179;
+	border-radius:20px;
+
+}
+.album-cover-detail {
+	margin:auto;
+	position:relative;
+	max-width:50%;
+}
+.button-wrapper {
+	position:relative;
+	margin:auto;
+	text-align:center;
+}
+.arrow-back {
+	position:relative;
+	margin:auto;
+	padding:5px 5px 5px 5px;
+	text-align:center;
+}
+h3 {
+	position: relative;
+	text-align: center;
+	max-width: max-content;
+	margin: auto;
+	padding: 5px;
+	font-size:1.75rem;
+	background-color:#ffffff;
+	border-radius: 10px;
+    box-shadow: 2px 2px 7px;
+}
+.genre-container {
+	position: relative;
+	text-align: center;
+	max-width: max-content;
+	margin: auto;
+	margin-bottom:20px;
+	padding: 5px;
+	font-size:1.75rem;
+	background-color:#ffffff;
+	border-radius: 10px;
+    box-shadow: 2px 2px 7px;
+}
+h6 {
+	position: relative;
+	text-align: center;
+	max-width: max-content;
+	margin: auto;
+	padding: 5px;
+	font-size:1rem;
+	background-color:#ffffff;
+	border-radius: 10px;
+    box-shadow: 2px 2px 7px;
+	margin-top:10px;
+}
+.event-name-title {
+	background-color: #ffffff;
+	text-shadow: 1px 1px #ff3179;
+	font-size:2rem;
+	border-radius: 20px;
+}
+.album-container {
+	max-width:30%;
+	float:left;
+	position:relative;
+	margin:auto;
+}
+.underground-container {
+	max-width:100%;
+	position:relative;
+	margin:auto;
+}
+.underground-album-container {
+	max-width:30%;
+	float:left;
+	margin:auto;
+	text-align: auto;
+}
+#logo h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.page-title {
+	font-size:50px;
+	text-shadow: 2px 2px #ffb1aa;
+	background-color:#ffffff;
+	border-radius:30px;
+	max-width:max-content;
+	padding:15px;
+	margin:10px 20px;
+	display:inline-block;
+	font-family:FjallaOne;
+}
+.artist-name {
+    font-size: 50px;
+    text-shadow: 2px 2px #ff3179;
+    background-color: #ffffff;
+    border-radius: 30px;
+    max-width: max-content;
+    padding: 15px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+	font-family: FjallaOne;
+}
+.fa {
+	padding:3px 5px 3px 5px;
+}
+.album-card {
+	position:relative;
+	float:left;
+	padding:15px;
+	width:15%;
+	text-align:center;
+}
+.album-card img {
+	position:relative;
+	max-width:99%;
+}
+.album-row {
+	position:relative;
+	text-align:auto;
+	width:80%;
+	margin:auto;
+	display:flex;
+	justify-content:space-between;
+}
+.underground-card {
+	position:relative;
+	float:left;
+	padding:15px;
+	width:30%;
+	text-align:center;
+}
+.underground-card img {
+	position:relative;
+	max-width:99%;
+}
+h2 {
+	text-align:center;
+	text-transform:uppercase;
+	color:#355367;
+	font-family: FjallaOne;
+	font-size:50px;
+	text-shadow: 2px 2px #00b0bf;
+	background-color: #ffffff;
+	border-radius:30px;
+	box-shadow: 5px 5px 10px;
+	max-width:max-content;
+	padding:100px;
+	/*padding: 8px 25px 0px 25px;*/
+}
+h5 {
+	color:#355367;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:1.5em;
+	background-color:#ffffff ;
+	color:#355367;
+	background-image: url("../images/store-background2.png");
+	font-size:16px;
+}
+.fa-chevron-left {
+	position:relative;
+	text-align:center;
+	margin:auto;
+	width: 10%;
+}
+#new-album-form {
+	text-align:center;
+	position:relative;
+	margin:auto;
+	max-width:22%;
+}
+#form {
+	text-align:center;
+	position:relative;
+	margin:auto;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding:50px 5px 50px 5px;
+	position: relative;
+	max-width: 60%;
+	background-color: #ffffff;
+	padding: 20px 40px;
+	box-shadow: 7px 7px 7px #9999994f;
+	border: 2px solid #e5e5e5;
+	border-radius: 20px;
+}
+.form-container {
+	text-align:center;
+	position:relative;
+	margin:auto;
+	margin-top:60px;
+	padding:50px 5px 50px 5px;
+	position: relative;
+	max-width: 60%;
+	background-color: #ffffff;
+	padding: 20px 40px;
+	box-shadow: 7px 7px 7px #9999994f;
+	border: 2px solid #e5e5e5;
+	border-radius: 20px;
+}
+.form-container-signup {
+	text-align:center;
+	position:relative;
+	margin:auto;
+	margin-top:60px;
+	padding:50px 5px 50px 5px;
+	position: relative;
+	max-width: 75%;
+	background-color: #ffffff;
+	padding: 20px 40px;
+	box-shadow: 7px 7px 7px #9999994f;
+	border: 2px solid #e5e5e5;
+	border-radius: 20px;
+}
+.form-header-wrapper {
+	text-align: center;
+}
+.form-header-signup {
+	text-align: center;
+	font-size:1.5rem;
+}
+.form-header {
+	font-size:2rem;
+	color:#355367;
+	background-color: #ffffff;
+	padding: 20px 40px;
+	box-shadow: 7px 7px 7px #9999994f;
+	border: 2px solid #e5e5e5;
+	border-radius: 20px;
+	font-family:FjallaOne;
+}
+.success-header {
+	font-size:2rem;
+	color:#ffffff;
+	background-color: #758132;
+	padding: 20px 40px;
+	box-shadow: 7px 7px 7px #4B5320;
+	border: 2px solid #e5e5e5;
+	border-radius: 20px;
+	font-family:FjallaOne;
+}
+.form-tagline {
+	font-size:1rem;
+	color: black;
+}
+.form-container {
+	max-width: 50%;
+	margin:auto;
+	margin-top:100px;
+}
+#artist-bio {
+	margin:40px 0px;
+}
+#artist-bio-body {
+		position: relative;
+		max-width: 50%;
+		text-align: left;
+		margin: auto;
+		background-color: #ffffff;
+		border-radius: 20px;
+		padding: 20px 40px;
+		box-shadow: 7px 7px 7px #9999994f;
+		border: 2px solid #e5e5e5;
+		border-radius: 20px;
+}
+.track-row {
+	position: relative;
+		max-width: 30%;
+		text-align: center;
+		margin: auto;
+		background-color: #ffffff;
+		border-radius: 20px;
+		padding: 20px 40px;
+		box-shadow: 7px 7px 7px #9999994f;
+		border: 2px solid #e5e5e5;
+		border-radius: 20px;
+}
+.artist-bio-title {
+	text-align:center;
+}
+label {
+	float:left;
+}
+input {
+	float:right;
+}
+#up-and-coming-radio {
+	float:left;
+}
+#platinum-status-radio {
+	float:left;
+}
+@font-face {
+    font-family: Smorgasbord;
+    src: local(Smorgasbord);
+	src:url(../fonts/Smorgasbord.ttf);
+}
+@font-face {
+    font-family: FjallaOne;
+    src: local(FjallaOne);
+	src:url(../fonts/FjallaOne.ttf);
+}
+@font-face {
+	font-family: ButesansUnicase;
+	src: local(ButesansUnicase);
+	src:url(../fonts/ButesansUnicase.otf);
+}
+.collection-name{
+	text-align:center;
+}/*
+.album-detail {
+	text-align:center;
+}*/
+.album-detail-container {
+	display: inline-block;
+}
+.category {
+	text-align:left;
+	margin:0rem 0rem 0rem 2rem;
+	color:#ff3179;
+	text-shadow:1px 1px #355367;
+	font-size:1.15rem;
+}
+.back-btn {
+	text-align:center;
+}
+.padding-10px {
+	padding:24px;
+}

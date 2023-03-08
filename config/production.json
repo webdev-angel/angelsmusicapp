@@ -1,0 +1,6 @@
+{
+    "name":"Music Streaming App - Production",
+    "mail":{
+        "host":"production-mail-server"
+    }
+}

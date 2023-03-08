@@ -1,0 +1,5 @@
+{
+    "name":"Angel's Music App",
+    "private-key":"",
+    "dbString":"mongodb://localhost/musicStreamingApp"
+}
