@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Albums - The Music Collection
+		</title>
+		<link href="/css/styles.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!-- code starting here-->
+		<section id="login-section">
+			<div id="login-section-wrapper">
+				<div id="logo">
+					<a href="/"><img src="/images/the-music-collection-logo.png" alt="The Music Collection Logo" title="The Music Collection Logo"></a>
+			</div>
+				<!--check here-->
+				<div id="login-search-section">
+					<div id="login">
+						<a href="/login">Login</a>
+					</div>
+					<div id="login">
+						<a href="/signup">Register</a>
+					</div>
+					<div id="search-wrapper">
+						<input type="text" id="search" name="search">
+					</div>
+				</div>
+				<!--check end-->
+			</div>
+		</section>
+		<div style="clear:both"></div>
+		<section id="navigation">
+			<nav id="main">
+				<a class="main-nav-item" href="/events">Upcoming Events</a>
+				<a class="main-nav-item" href="/underground">Underground</a>
+				<a class="main-nav-item" href="/library">Library</a>
+				<div class="dropdown-menu">
+					<button class="menu-btn">Artists</button>
+					<div class="menu-content">
+						<a class="main-nav-item-hidden" href="/artists">Browse Artists</a>
+						<a class="main-nav-item-hidden" href="/artists/new">Add an Artist</a>
+					</div>
+				</div>
+				<div class="dropdown-menu">
+					<button class="menu-btn">Albums</button>
+					<div class="menu-content">
+						<a class="main-nav-item-hidden" href="/albums">Browse Albums</a>
+						<a class="main-nav-item-hidden" href="/albums/new">Add an Album</a>
+					</div>
+				</div>
+				</nav>
+		</section>
+		<section id="artist-collection">
+			<div class="page-title-wrapper">
+				<h2 class="page-title">
+					Albums
+				</h2>
+			</div>
+			<div style="clear:both"></div>
+			<div class="artist-row-wrapper">
+				<div class="category-title">
+					<h5 class="category">Hip-Hop</h5>
+				</div>
+				<div class="artist-row">
+					
+								
+					
+					
+					<% albums.forEach(album => { if(album.albumTitle !='pop') {%>
+					<div class="artist-card">
+						<img src="<%=album.albumImage%>" class="linked-img">
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name"><%=album.artistName%>, <em><%=album.albumTitle%></em></p>
+						</div>
+					</div>
+					<% }}); %>
+			
+			
+		
+					<div class="artist-card">
+						<img src="images/the-marshall-mathers-lp.jpeg"  class="linked-img" alt="The Marshall Mathers LP" title="The Marshall Mather LP" />
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Eminem, <em>The Marshall Mathers LP</em></p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/black-on-both-sides.jpeg"  class="linked-img" alt="Black on Both Sides" title="Black on Both Sides"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Mos Def, <em>Black on Both Sides</em></p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/the-college-dropout.jpeg"  class="linked-img" alt="College Dropout" title="College Dropout"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Ye, <em>College Dropout</em></p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/speakerboxxx-the-love-below.jpeg"  class="linked-img" alt="Speakerboxxx/The Love Below" title="Speakerboxxx/The Love Below"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Outkast, <em>Speakerboxxx/The Love Below</em></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+			<div class="artist-row-wrapper">
+				<div class="category-title">
+					<h5 class="category">R&B</h5>
+				</div>
+				<div class="artist-row">
+					<div class="artist-card">
+						<img src="images/still-over-it.jpeg"  class="linked-img" alt="Still Over It" title="Still Over It"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Summer Walker, <em>Still Over It</em></p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/back-of-my-mind.jpeg"  class="linked-img" alt="Back of My Mind" title="Back of My Mind"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">H.E.R., <em>Back of My Mind</em></p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/daydream.jpeg"  class="linked-img" alt="Daydream" title="Daydream"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Mariah Carey, <em>Daydream</em></p>
+						</div>
+					</div>
+					<div class="artist-card">
+                        <a href="../albumView">
+						<img src="images/my-love-is-your-love.jpeg"  class="linked-img" alt="My Love Is Your Love" title="My Love Is Your Love"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Whitney Houston, <em>My Love is Your Love</em></p>
+						</div>
+                        </a>
+					</div>
+					<div class="artist-card">
+						<img src="images/planet-her.jpeg"  class="linked-img" alt="Planet Her" title="Planet Her"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Doja Cat, <em>Planet Her</em></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+			<div class="artist-row-wrapper">
+				<div class="category-title">
+					<h5 class="category">Rock</h5>
+				</div>
+				<div class="artist-row">
+					<div class="artist-card">
+						<img src="images/are-you-experienced.jpeg"  class="linked-img" alt="Are You Experienced" title="Are You Experienced"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Jimi Hendrix, <em>Are You Experienced</em></p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/the-explosive-little-richard.jpeg"  class="linked-img" alt="The Explosive Little Richard" title="The Explosive Little Richard"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Little Richard, <em>The Explosive Little Richard</em></p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/after-school-session.jpeg"  class="linked-img" alt="Chuck Berry" title="Chuck Berry"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Chuck Berry, <em>After School Session</em></p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/ray-charles-the-ultimate-collection.jpeg"  class="linked-img" alt="Ray Charles: The Ultimate Collection" title="Ray Charles: The Ultimate Collection"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Ray Charles, <em>The Ultimate Collection</em></p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/twistin-the-night-away.jpeg"  class="linked-img" alt="Twistin' The Night Away" title="Twistin' The Night Away"/> 
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">Sam Cooke, <em>Twistin' The Night Away</em></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</section>
+			<div style="clear:both"></div>
+		<footer>
+			<p>
+				Copyright 2022
+			</p>
+		</footer>
+
+			</body>
+		
+		</html>
+
+<!--End coding here-->

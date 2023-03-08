@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Album - The Music Collection
+		</title>
+		<link href="/css/styles.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!-- code starting here-->
+		<section id="login-section">
+			<div id="login-section-wrapper">
+				<div id="logo">
+						<a href="/"><img src="/images/the-music-collection-logo.png" alt="The Music Collection Logo" title="The Music Collection Logo"></a>
+				</div>
+				<!--check here-->
+				<div id="login-search-section">
+					<div id="login">
+						<a href="/login">Login</a>
+					</div>
+					<div id="login">
+						<a href="/signup">Register</a>
+					</div>
+					<div id="search-wrapper">
+						<input type="text" id="search" name="search">
+					</div>
+				</div>
+				<!--check end-->
+		</div>
+		</section>
+		<div style="clear:both"></div>
+		<section id="navigation">
+			<nav id="main">
+				<a class="main-nav-item" href="/events">Upcoming Events</a>
+				<a class="main-nav-item" href="/underground">Underground</a>
+				<a class="main-nav-item" href="/library">Library</a>
+				<div class="dropdown-menu">
+					<button class="menu-btn">Artists</button>
+					<div class="menu-content">
+						<a class="main-nav-item-hidden" href="/artists">Browse Artists</a>
+						<a class="main-nav-item-hidden" href="/artists/new">Add an Artist</a>
+					</div>
+				</div>
+				<div class="dropdown-menu">
+					<button class="menu-btn">Albums</button>
+					<div class="menu-content">
+						<a class="main-nav-item-hidden" href="/albums">Browse Albums</a>
+						<a class="main-nav-item-hidden" href="/albums/new">Add an Album</a>
+					</div>
+				</div>
+				</nav>
+		</section>
+        <section>
+            <div class="album-detail">
+                <div class="event-detail-wrapper">
+                    <div class="event-name-wrapper">
+                        <h2 class="page-title padding-10px">Album: <%= album.albumTitle %></h2>
+                        <h3 class="genre-container">Artist: <%= album.artistName %></h3>
+				</div>
+				<div class="underground-container">
+					<div class="artist-row-wrapper">
+						<div class="artist-row">
+							<div class="underground-card">
+								<img src="/<%=album.albumImage%>">
+							</div>
+							<div class="album-description-wrapper">
+										<h5>This album was released: <%= album.albumReleaseDate %> with <%= album.albumLabel %>.</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="clear:both"></div>
+        </section>
+		<div style="clear:both"></div>
+        <section>
+			<div>
+				<div>
+					<a href="/" class="btn">All Albums</a>
+					<a href="/albums/edit/<%= album.id%>" class="btn">Edit</a>
+					<form action="/albums/<%= album.id %>?_method=DELETE" method="POST">
+						<button type="submit">DELETE</button>
+					</form>
+				</div>
+			</div>
+        </section>
+</body>
+</html>

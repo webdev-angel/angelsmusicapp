@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Home - The Music Collection
+		</title>
+		<link href="/css/styles.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="/script.js" defer></script>
+	</head>
+	<body>
+		<!-- code starting here-->
+		<section id="login-section">
+			<div id="login-section-wrapper">
+				<div id="logo">
+					<a href="/"><img src="/images/the-music-collection-logo.png" alt="The Music Collection Logo" title="The Music Collection Logo"></a>
+			</div>
+				<!--check here-->
+				<div id="login-search-section">
+					<div id="login">
+						<a href="/login">Login</a>
+					</div>
+					<div id="login">
+						<a href="/signup">Register</a>
+					</div>
+					<div id="search-wrapper">
+						<input type="text" id="search" name="search" placeholder="Search Albums & Artists..." onkeyup="sendData(this)">
+					</div>
+					<!--Search Bar Script-->
+					<script>
+						function sendData(e){
+							fetch('getAlbums', {
+								method: 'POST',
+								headers: {'Content-Type': 'application/json'},
+								body: JSON.stringify({payload: e.value})
+							});
+						}
+					</script>
+				</div>
+				<!--check end-->
+			</div>
+		</section>
+		<div style="clear:both"></div>
+		<section id="navigation">
+			<nav id="main">
+				<a class="main-nav-item" href="/events">Upcoming Events</a>
+				<a class="main-nav-item" href="/underground">Underground</a>
+				<a class="main-nav-item" href="/library">Library</a>
+				<div class="dropdown-menu">
+					<button class="menu-btn">Artists</button>
+					<div class="menu-content">
+						<a class="main-nav-item-hidden" href="/artists">Browse Artists</a>
+						<a class="main-nav-item-hidden" href="/artists/new">Add an Artist</a>
+					</div>
+				</div>
+				<div class="dropdown-menu">
+					<button class="menu-btn">Albums</button>
+					<div class="menu-content">
+						<a class="main-nav-item-hidden" href="/albums">Browse Albums</a>
+						<a class="main-nav-item-hidden" href="/albums/new">Add an Album</a>
+					</div>
+				</div>
+				</nav>
+		</section>
+		<section id="artist-collection">
+			<div class="page-title-wrapper">
+				<h2 class="page-title">
+					Welcome To The Music Collection
+				</h2>
+			</div>
+			<div class="artist-row-wrapper">
+				<div class="category-section">
+					<div>
+						<div class="category-section-title">
+							<h1>Featured Categories & Artists</h1>
+						</div>
+					</div>
+				</div>
+				<!--<div class="category-title">
+					<h5 class="category">Pop</h5>
+				</div>
+				<!--BEGIN EJS INJECTION-->
+				<!--<div class="artist-row">
+					<% albums.forEach(album => { if(album.genre ==='pop'){ %>
+						<div class="artist-card">
+							<%=album.img%>
+							<div class="artist-name-wrapper">
+								<%=album.artistName%>
+							</div>
+						</div>
+					<% }}); %>
+				</div>
+				<!--END EJS INJECTION-->
+			</div>
+			<div style="clear:both"></div>
+			<div class="artist-row-wrapper">
+				<div class="category-title">
+					<h5 class="category">Hip-Hop</h5>
+				</div>
+				<div class="artist-row">
+					<div class="artist-card">
+						<img src="images/eminem.jpeg"  class="linked-img" alt="Eminem" title="Eminem"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">EMINEM</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/jay-z.jpeg"  class="linked-img" alt="Jay-Z" title="Jay-Z" />
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">JAY-Z</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/doja-cat.jpeg"  class="linked-img" alt="Doja Cat" title="Doja Cat"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">DOJA CAT</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/the-weeknd.jpeg"  class="linked-img" alt="The Weeknd" title="The Weeknd"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">THE WEEKND</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/j-cole.jpeg"  class="linked-img" alt="J. Cole" title="J. Cole"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">J. COLE</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+			<div class="artist-row-wrapper">
+				<div class="category-title">
+					<h5 class="category">R&B</h5>
+				</div>
+				<div class="artist-row">
+					<div class="artist-card">
+						<img src="images/usher.jpeg"  class="linked-img" alt="Usher" title="Usher"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">USHER</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/alicia-keys.jpeg"  class="linked-img" alt="Alicia Keys" title="Alicia Keys"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">ALICIA KEYS</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/ginuwine.jpeg"  class="linked-img" alt="Ginuwine" title="Ginuwine"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">GINUWINE</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/jill-scott.jpeg"  class="linked-img" alt="Jill Scott" title="Jill Scott"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">JILL SCOTT</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/faith-evans.jpeg"  class="linked-img" alt="Faith Evans" title="Faith Evans"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">FAITH EVANS</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+			<div class="artist-row-wrapper">
+				<div class="category-title">
+					<h5 class="category">Rock</h5>
+				</div>
+				<div class="artist-row">
+					<div class="artist-card">
+						<img src="images/jimi-hendrix.jpeg"  class="linked-img" alt="Jimi Hendrix" title="Jimi Hendrix"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">JIMI HENDRIX</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/little-richard.jpeg"  class="linked-img" alt="Little Richard" title="Little Richard"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">LITTLE RICHARD</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/chuck-berry.jpeg"  class="linked-img" alt="Chuck Berry" title="Chuck Berry"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">CHUCK BERRY</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/ray-charles.jpeg"  class="linked-img" alt="Ray Charles" title="Ray Charles"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">RAY CHARLES</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/sam-cooke.jpeg"  class="linked-img" alt="Sam Cooke" title="Sam Cooke"/> 
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">SAM COOKE</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+			<div class="artist-row-wrapper">
+				<div class="category-title">
+					<h5 class="category">Country</h5>
+				</div>
+				<div class="artist-row">
+					<div class="artist-card">
+						<img src="images/darius-rucker.jpeg"  class="linked-img" alt="Darius Rucker" title="Darius Rucker"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">DARIUS RUCKER</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/aaron-neville.jpeg"  class="linked-img" alt="Aaron Neville" title="Arron Neville"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">AARON NEVILLE</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/mickey-guyton.jpeg"  class="linked-img" alt="Mickey Guyton" title="Mickey Guyton"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">MICKEY GUYTON</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/charley-pride.jpeg"  class="linked-img" alt="Charley Pride" title="Charley Pride"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">CHARLEY PRIDE</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/deford-bailey.jpeg"  class="linked-img" alt="Deford Bailey" title="Deford Bailey"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">DEFORD BAILEY</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+			<div class="artist-row-wrapper">
+				<div class="category-title">
+					<h5 class="category">Metal</h5>
+				</div>
+				<div class="artist-row">
+					<div class="artist-card">
+						<img src="images/skindred.jpeg"  class="linked-img" alt="Skindred" title="Skindred"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">SKINDRED</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/candiria.jpeg"  class="linked-img" alt="Candiria" title="Candiria"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">CANDIRIA</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/suffocation.jpeg"  class="linked-img" alt="Suffocation" title="Suffocation"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">SUFFOCATION</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/animals-as-leaders.jpeg"  class="linked-img" alt="Animals As Leaders" title="Animals As Leaders"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">ANIMALS AS LEADERS</p>
+						</div>
+					</div>
+					<div class="artist-card">
+						<img src="images/alice-in-chains.jpeg"  class="linked-img" alt="Alice In Chains" title="Alice In Chains"/>
+						<div class="artist-name-wrapper">
+							<p class="artist-card-name">ALICE IN CHAINS</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</section>
+			<div style="clear:both"></div>
+		<footer>
+			<p>
+				Copyright 2022
+			</p>
+		</footer>
+
+			</body>
+		
+		</html>
+
+<!--End coding here-->

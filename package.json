@@ -1,0 +1,32 @@
+{
+  "name": "musicstreamingapp",
+  "version": "1.0.0",
+  "description": "Music Streaming App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "16.15.0"
+  },
+  "author": "Angel Hopkins",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "helmet": "^5.1.1",
+    "joi": "^17.6.0",
+    "method-override": "^3.0.0",
+    "mongodb": "^4.8.1",
+    "mongoose": "^6.4.0",
+    "multer": "^1.4.5-lts.1",
+    "router": "^1.3.7"
+  }
+}
